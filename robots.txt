@@ -1,0 +1,6 @@
+# robots.txt para TecnoWorld C.A.
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tecnoworld.com.ve/sitemap.xml

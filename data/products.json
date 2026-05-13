@@ -1,0 +1,100 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Laptop Pro X15",
+      "categoria": "Laptops",
+      "descripcion": "Procesador Intel Core i7, 16GB RAM, SSD 512GB, pantalla 15.6\" FHD",
+      "precio": 1299.99,
+      "imagen": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 2,
+      "nombre": "Laptop UltraSlim 14",
+      "categoria": "Laptops",
+      "descripcion": "AMD Ryzen 7, 8GB RAM, SSD 256GB, pantalla 14\" IPS, peso 1.2kg",
+      "precio": 899.99,
+      "imagen": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "nombre": "Mouse Gamer RGB",
+      "categoria": "Periféricos",
+      "descripcion": "Sensor óptico 16000 DPI, iluminación RGB, 6 botones programables",
+      "precio": 49.99,
+      "imagen": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 4,
+      "nombre": "Teclado Mecánico Pro",
+      "categoria": "Periféricos",
+      "descripcion": "Switches Cherry MX, retroiluminación LED, construcción en aluminio",
+      "precio": 129.99,
+      "imagen": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 5,
+      "nombre": "Procesador Ryzen 9",
+      "categoria": "Componentes",
+      "descripcion": "8 núcleos, 16 threads, 3.8GHz base, socket AM4, cooler incluido",
+      "precio": 349.99,
+      "imagen": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 6,
+      "nombre": "GPU RTX 4070",
+      "categoria": "Componentes",
+      "descripcion": "12GB GDDR6X, ray tracing, DLSS 3, 5888 CUDA cores",
+      "precio": 599.99,
+      "imagen": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 7,
+      "nombre": "Suscripción TechPremium",
+      "categoria": "Suscripciones",
+      "descripcion": "Soporte técnico 24/7, actualizaciones prioritarias, descuentos exclusivos",
+      "precio": 19.99,
+      "imagen": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 8,
+      "nombre": "Suscripción CloudPro",
+      "categoria": "Suscripciones",
+      "descripcion": "100GB almacenamiento cloud, sincronización multi-dispositivo, backup automático",
+      "precio": 9.99,
+      "imagen": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 9,
+      "nombre": "Hub USB-C 7-en-1",
+      "categoria": "Accesorios",
+      "descripcion": "HDMI 4K, 3x USB-A, USB-C PD, slot SD/microSD, ethernet RJ45",
+      "precio": 59.99,
+      "imagen": "https://images.unsplash.com/photo-1625723044792-44de16ccb4e9?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 10,
+      "nombre": "Auriculares Wireless Pro",
+      "categoria": "Accesorios",
+      "descripcion": "Cancelación activa de ruido, 30h batería, bluetooth 5.2, micrófono integrado",
+      "precio": 149.99,
+      "imagen": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 11,
+      "nombre": "Laptop Gaming Titan",
+      "categoria": "Laptops",
+      "descripcion": "Intel i9, 32GB RAM, RTX 4080, pantalla 17.3\" 240Hz, RGB keyboard",
+      "precio": 2499.99,
+      "imagen": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 12,
+      "nombre": "Webcam 4K Pro",
+      "categoria": "Accesorios",
+      "descripcion": "Resolución 3840x2160, autofocus, reducción de ruido, montaje tipo clip",
+      "precio": 89.99,
+      "imagen": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?w=400&h=300&fit=crop"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TecnoWorld C.A. - Distribuidora líder de tecnología de punta en Venezuela. Laptops, periféricos, componentes y accesorios. Envíos a todo el país.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="TecnoWorld C.A.">
+  <link rel="canonical" href="https://tecnoworld.com.ve/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TecnoWorld C.A. - Soluciones Tecnológicas">
+  <meta property="og:description" content="Distribuidora líder de tecnología de punta en Venezuela. Laptops, periféricos, componentes y accesorios.">
+  <meta property="og:url" content="https://tecnoworld.com.ve/">
+  <meta property="og:site_name" content="TecnoWorld">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TecnoWorld C.A. - Soluciones Tecnológicas">
+  <meta name="twitter:description" content="Distribuidora líder de tecnología de punta en Venezuela.">
+  
+  <title>TecnoWorld C.A. - Soluciones Tecnológicas | Tecnología de Punta</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TecnoWorld C.A.",
+    "description": "Distribuidora de tecnología de punta en Venezuela",
+    "url": "https://tecnoworld.com.ve",
+    "logo": "https://tecnoworld.com.ve/images/logo.png",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Venezuela"
+    },
+    "serviceType": "Technology Distribution",
+    "priceRange": "$$"
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TecnoWorld - Catálogo de Tecnología",
+    "url": "https://tecnoworld.com.ve",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tecnoworld.com.ve/#catalogo?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">TecnoWorld</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      <ul class="nav-menu" id="navMenu">
+        <li class="menu-item">
+          <a href="#">Inicio</a>
+        </li>
+        <li class="menu-item">
+          <a href="#catalogo">Catálogo</a>
+        </li>
+        <li class="menu-item">
+          <a href="#nosotros">Nosotros</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Impulsamos tu éxito con tecnología de punta</h1>
+      <p class="hero-subtitle">Soluciones integrales para emprendedores y empresas que buscan innovar</p>
+      <a href="#catalogo" class="cta-button">Explorar Catálogo</a>
+    </div>
+    <div class="hero-gradient"></div>
+  </section>
+
+  <section class="marcas">
+    <div class="section-container">
+      <h2 class="section-title">Marcas Que Distribuimos</h2>
+      <div class="marcas-grid">
+        <a href="#" class="marca-item" title="Windows">
+          <img src="https://www.google.com/s2/favicons?domain=windows.com&sz=64" alt="Windows">
+        </a>
+        <a href="#" class="marca-item" title="Intel">
+          <img src="https://www.google.com/s2/favicons?domain=intel.com&sz=64" alt="Intel">
+        </a>
+        <a href="#" class="marca-item" title="AMD">
+          <img src="https://www.google.com/s2/favicons?domain=amd.com&sz=64" alt="AMD">
+        </a>
+        <a href="#" class="marca-item" title="NVIDIA">
+          <img src="https://www.google.com/s2/favicons?domain=nvidia.com&sz=64" alt="NVIDIA">
+        </a>
+        <a href="#" class="marca-item" title="Asus">
+          <img src="https://www.google.com/s2/favicons?domain=asus.com&sz=64" alt="Asus">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalogo" id="catalogo">
+    <div class="section-container">
+      <h2 class="section-title">Catálogo Inteligente</h2>
+      <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
+        <span class="search-icon">⌕</span>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="Laptops">Laptops</button>
+        <button class="filter-btn" data-category="Periféricos">Periféricos</button>
+        <button class="filter-btn" data-category="Componentes">Componentes</button>
+        <button class="filter-btn" data-category="Suscripciones">Suscripciones</button>
+        <button class="filter-btn" data-category="Accesorios">Accesorios</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+      </div>
+      <div class="no-results" id="noResults" hidden>
+        <span class="no-results-icon">∅</span>
+        <p>No se encontraron productos que coincidan con tu búsqueda</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="nosotros" id="nosotros">
+    <div class="section-container">
+      <h2 class="section-title">Sobre TecnoWorld C.A.</h2>
+      <div class="nosotros-content">
+        <div class="nosotros-image">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop" alt="Oficinas TecnoWorld">
+        </div>
+        <div class="nosotros-text">
+          <p class="highlight-text">Somos líderes en distribución de tecnología de punta en Venezuela, comprometidos con impulsar el crecimiento de emprendedores y empresas a través de soluciones tecnológicas innovadoras.</p>
+          <p>Desde nuestra fundación, hemos marcado la diferencia en el mercado tecnológico venezolano. Nos especializamos en ofrecer productos de alta calidad respaldados por un servicio técnico especializado y soporte post-venta excepcional.</p>
+          <p>Nuestro compromiso es claro: proporcionar tecnología que empodere a nuestros clientes para alcanzar sus metas empresariales. Cada producto que ofrecemos ha sido cuidadosamente seleccionado para garantizar rendimiento, durabilidad y excelente relación calidad-precio.</p>
+        </div>
+      </div>
+      <div class="testimonios">
+        <div class="testimonio-card">
+          <p class="testimonio-texto" data-es=""TecnoWorld transformó nuestra oficina con equipos de última generación. El servicio técnico es impecable y siempre están atentos a nuestras necesidades."" data-en=""TecnoWorld transformed our office with cutting-edge equipment. The technical service is impeccable and they are always attentive to our needs."">"TecnoWorld transformó nuestra oficina con equipos de última generación. El servicio técnico es impecable y siempre están atentos a nuestras necesidades."</p>
+          <p class="testimonio-autor">- María González, Emprendedora</p>
+        </div>
+        <div class="testimonio-card">
+          <p class="testimonio-texto" data-es=""Como empresa, necesitamos tecnología confiable. TecnoWorld nos ha proporcionado soluciones que han optimizado nuestros procesos de trabajo."" data-en=""As a company, we need reliable technology. TecnoWorld has provided us with solutions that have optimized our work processes."">"Como empresa, necesitamos tecnología confiable. TecnoWorld nos ha proporcionado soluciones que han optimizado nuestros procesos de trabajo."</p>
+          <p class="testimonio-autor">- Carlos Rodríguez, Director de Operaciones</p>
+        </div>
+        <div class="testimonio-card">
+          <p class="testimonio-texto" data-es=""La mejor atención al cliente que he experimentado. El equipo de soporte técnico resolve cualquier duda en tiempo récord."" data-en=""The best customer service I have experienced. The technical support team resolves any doubt in record time."">"La mejor atención al cliente que he experimentado. El equipo de soporte técnico resolve cualquier duda en tiempo récord."</p>
+          <p class="testimonio-autor">- Ana López, Gerente de Tecnología</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="section-container">
+      <h2 class="section-title">Contáctanos</h2>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required minlength="2" placeholder="Tu nombre">
+          <span class="error-message" id="nombreError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+          <span class="error-message" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+58 412 1234567">
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required minlength="10" placeholder="¿En qué podemos ayudarte?"></textarea>
+          <span class="error-message" id="mensajeError"></span>
+        </div>
+        <button type="submit" class="submit-btn">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="popup-icon">✓</span>
+      <h3>¡Mensaje Enviado!</h3>
+      <p>Gracias por contactarnos. Te responderemos en breve.</p>
+      <button class="popup-close" id="popupClose">Cerrar</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-icon">◈</span>
+        <span>TecnoWorld C.A.</span>
+      </div>
+      <p class="footer-text">Distribuidora tecnológica de excelencia</p>
+      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 TecnoWorld C.A. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
