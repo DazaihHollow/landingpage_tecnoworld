@@ -1,0 +1,12 @@
+# Archivos del Sistema / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Archivos y carpetas del Entorno Agentic / IA
+.agents/
+skills-lock.json
+.gemini/
+
+# Logs
+*.log
