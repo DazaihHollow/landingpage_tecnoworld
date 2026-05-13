@@ -60,13 +60,14 @@
   </script>
 </head>
 <body>
-  <nav class="navbar">
+  <a href="#catalogo" class="skip-link">Saltar al contenido principal</a>
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
     <div class="nav-container">
       <a href="#" class="logo">
         <span class="logo-icon">◈</span>
         <span class="logo-text">TecnoWorld</span>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Menú">
+      <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="navMenu">
           <span></span>
           <span></span>
           <span></span>
@@ -126,7 +127,7 @@
       <h2 class="section-title">Catálogo Inteligente</h2>
       <div class="search-container">
         <input type="text" id="searchInput" class="search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
-        <span class="search-icon">⌕</span>
+        <span class="search-icon" aria-hidden="true">⌕</span>
       </div>
       <div class="filters" id="filters">
         <button class="filter-btn active" data-category="all">Todos</button>
@@ -181,13 +182,13 @@
       <form class="contact-form" id="contactForm">
         <div class="form-group">
           <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" name="nombre" required minlength="2" placeholder="Tu nombre">
-          <span class="error-message" id="nombreError"></span>
+          <input type="text" id="nombre" name="nombre" required minlength="2" placeholder="Tu nombre" aria-describedby="nombreError">
+          <span class="error-message" id="nombreError" role="alert"></span>
         </div>
         <div class="form-group">
           <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
-          <span class="error-message" id="emailError"></span>
+          <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com" aria-describedby="emailError">
+          <span class="error-message" id="emailError" role="alert"></span>
         </div>
         <div class="form-group">
           <label for="telefono">Teléfono</label>
@@ -195,19 +196,19 @@
         </div>
         <div class="form-group">
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" required minlength="10" placeholder="¿En qué podemos ayudarte?"></textarea>
-          <span class="error-message" id="mensajeError"></span>
+          <textarea id="mensaje" name="mensaje" required minlength="10" placeholder="¿En qué podemos ayudarte?" aria-describedby="mensajeError"></textarea>
+          <span class="error-message" id="mensajeError" role="alert"></span>
         </div>
         <button type="submit" class="submit-btn">Enviar mensaje</button>
       </form>
     </div>
   </section>
 
-  <div class="popup" id="popup">
+  <div class="popup" id="popup" role="alertdialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-desc">
     <div class="popup-content">
-      <span class="popup-icon">✓</span>
-      <h3>¡Mensaje Enviado!</h3>
-      <p>Gracias por contactarnos. Te responderemos en breve.</p>
+      <span class="popup-icon" aria-hidden="true">✓</span>
+      <h3 id="popup-title">¡Mensaje Enviado!</h3>
+      <p id="popup-desc">Gracias por contactarnos. Te responderemos en breve.</p>
       <button class="popup-close" id="popupClose">Cerrar</button>
     </div>
   </div>
@@ -221,16 +222,16 @@
       <p class="footer-text">Distribuidora tecnológica de excelencia</p>
       <div class="footer-social">
         <a href="#" class="social-link" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         </a>
         <a href="#" class="social-link" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
         </a>
         <a href="#" class="social-link" aria-label="Twitter">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
         </a>
         <a href="#" class="social-link" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
       </div>
       <p class="footer-copy">© 2026 TecnoWorld C.A. Todos los derechos reservados.</p>

@@ -36,15 +36,17 @@ function initMenuHamburguesa() {
   const navLinks = navMenu.querySelectorAll('a');
 
   hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
+    const isActive = hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    hamburger.setAttribute('aria-expanded', isActive);
+    document.body.style.overflow = isActive ? 'hidden' : '';
   });
 
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('active');
       navMenu.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     });
   });
@@ -138,9 +140,11 @@ function initFormularioContacto() {
     if (nombreInput.value.trim().length < 2) {
       errorEl.textContent = 'El nombre debe tener al menos 2 caracteres';
       nombreInput.setCustomValidity('invalido');
+      nombreInput.setAttribute('aria-invalid', 'true');
     } else {
       errorEl.textContent = '';
       nombreInput.setCustomValidity('');
+      nombreInput.setAttribute('aria-invalid', 'false');
     }
   };
 
@@ -150,9 +154,11 @@ function initFormularioContacto() {
     if (!emailRegex.test(emailInput.value)) {
       errorEl.textContent = 'Ingrese un correo electrónico válido';
       emailInput.setCustomValidity('invalido');
+      emailInput.setAttribute('aria-invalid', 'true');
     } else {
       errorEl.textContent = '';
       emailInput.setCustomValidity('');
+      emailInput.setAttribute('aria-invalid', 'false');
     }
   };
 
@@ -161,9 +167,11 @@ function initFormularioContacto() {
     if (mensajeInput.value.trim().length < 10) {
       errorEl.textContent = 'El mensaje debe tener al menos 10 caracteres';
       mensajeInput.setCustomValidity('invalido');
+      mensajeInput.setAttribute('aria-invalid', 'true');
     } else {
       errorEl.textContent = '';
       mensajeInput.setCustomValidity('');
+      mensajeInput.setAttribute('aria-invalid', 'false');
     }
   };
 
@@ -188,14 +196,17 @@ function initFormularioContacto() {
       const popup = document.getElementById('popup');
       const popupClose = document.getElementById('popupClose');
       popup.classList.add('active');
+      popupClose.focus();
 
       popupClose.addEventListener('click', () => {
         popup.classList.remove('active');
+        nombreInput.focus();
       });
 
       popup.addEventListener('click', (e) => {
         if (e.target === popup) {
           popup.classList.remove('active');
+          nombreInput.focus();
         }
       });
 
